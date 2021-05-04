@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Breadcrum from './components/breadcurm/breadcrum'
+import FilterList from './components/filters/filterlist'
+import Header from './components/header/header'
+import Heading from './components/heading'
+import MenuList from './components/menu/menulist'
+import Footer from './components/footer/footer'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Breadcrum />
+      <FilterList />
+      <Heading />
+      <MenuList />
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
